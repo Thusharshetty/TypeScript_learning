@@ -174,3 +174,7 @@ const summary:chaiSummary={
     name:"Green Tea",
     price:2.5
 }
+
+function justFunction(name:string):string{
+    return `Hello ${name}`;
+}
