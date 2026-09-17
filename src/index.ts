@@ -178,3 +178,35 @@ const summary:chaiSummary={
 function justFunction(name:string):string{
     return `Hello ${name}`;
 }
+
+//Array
+const names:string[]=["thushar"];
+
+const rating:Array<number>=[1,2.5];
+
+type chaiii={
+    name:string;
+    price:number
+}
+const menu:chaiii[]=[
+    {name:"thushar",price:25}
+]
+
+const cities:readonly string[]=["Mumbai"];
+//not possible beacuse it is reaconly
+// cities.push("pune")
+
+const table:number[][]=[[1,2,3],[4,5,6]];
+
+let userInfo:[string,number,boolean?];
+
+userInfo=["thushar",10];
+
+const chaiItems:[name:string,price:number]=["thi",20]
+
+enum CHAITYPE{
+    MASALA = "MASALA",
+    GINGER = "GINGER"
+}
+
+console.log(CHAITYPE.MASALA);
