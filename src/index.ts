@@ -210,3 +210,30 @@ enum CHAITYPE{
 }
 
 console.log(CHAITYPE.MASALA);
+
+function wrapInArray<T>(item:T):T[]{
+    return [item];
+}
+
+wrapInArray(42);
+
+function pair<A,B>(a:A,b:B):[A,B]{
+    return [a,b];
+}
+
+pair("ththt",{"flavour":"ansans"});
+
+interface box<T>{
+    contenet:T;
+}
+const numberBox:box<number>={contenet:10};
+
+interface apiPromise<T>{
+    status:number,
+    data:T
+}
+
+const res1:apiPromise<{flavour:string}>={
+    status:200,
+    data:{flavour:"masala"}
+}
